@@ -66,7 +66,7 @@ if __name__ == "__main__":
     functions_frame.pack(side = "top", expand = True, fill = "both")  
  
     task_label = Label( functions_frame,text = "TO-DO-LIST \n Enter the Task Title:",  
-        font = ("BAZOOKA", "14", "bold"),  
+        font = ("arial", "14", "bold"),  
         background = "#8EE5EE", 
         foreground="#FF6103"
     )    
@@ -74,7 +74,7 @@ if __name__ == "__main__":
         
     task_field = Entry(  
         functions_frame,  
-        font = ("BAZOOKA", "14"),  
+        font = ("Arial", "14"),  
         width = 42,  
         foreground="black",
         background = "white",  
@@ -85,7 +85,7 @@ if __name__ == "__main__":
         functions_frame,  
         text = "Add",  
         width = 15,
-        bg='#D4AC0D',font=("BAZOOKA", "14", "bold"),
+        bg='#D4AC0D',font=("arial", "14", "bold"),
         command = add_task,
         
     )  
@@ -93,14 +93,14 @@ if __name__ == "__main__":
         functions_frame,  
         text = "Remove",  
         width = 15,
-        bg='#D4AC0D', font=("BAZOOKA", "14", "bold"),
+        bg='#D4AC0D', font=("arial", "14", "bold"),
         command = delete_task,  
     )  
     del_all_button = Button(  
         functions_frame,  
         text = "Delete All",  
         width = 15,
-        font=("BAZOOKA", "14", "bold"),
+        font=("arial", "14", "bold"),
         bg='#D4AC0D',
         command = delete_all_tasks  
     )
@@ -109,7 +109,7 @@ if __name__ == "__main__":
         functions_frame,  
         text = "Exit / Close",  
         width = 52,
-        bg='#D4AC0D',  font=("BAZOOKA", "14", "bold"),
+        bg='#D4AC0D',  font=("arial", "14", "bold"),
         command = close  
     )    
     add_button.place(x = 18, y = 80,)  
